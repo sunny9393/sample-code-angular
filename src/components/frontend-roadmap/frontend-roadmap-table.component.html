@@ -1,0 +1,37 @@
+<table class="roadmap-table" aria-label="Frontend Developer Roadmap">
+    <caption>Frontend Developer Roadmap</caption>
+    <thead>
+        <tr>
+            <th scope="col">Level</th>
+            <th scope="col">Core Skills</th>
+            <th scope="col">Frameworks & Libraries</th>
+            <th scope="col">Tools</th>
+            <th scope="col">Soft Skills</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let level of roadmapData">
+            <td>{{ level?.key | titlecase }}</td>
+            <td>
+                <ul>
+                    <li *ngFor="let skill of level?.value?.core_skills">{{ skill }}</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li *ngFor="let lib of level?.value?.frameworks_libraries">{{ lib }}</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li *ngFor="let tool of level?.value?.tools">{{ tool }}</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li *ngFor="let softSkill of level?.value?.soft_skills">{{ softSkill }}</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>

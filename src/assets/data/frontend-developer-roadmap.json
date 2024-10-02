@@ -1,0 +1,86 @@
+{
+    "frontend_developer_roadmap": {
+      "Junior Frontend Developer": {
+        "core_skills": [
+          "HTML5",
+          "CSS3",
+          "JavaScript (ES6+)",
+          "Responsive Design",
+          "Version Control (Git)",
+          "Basic DOM Manipulation",
+          "Browser Developer Tools",
+          "Basic SEO Principles",
+          "Basic Accessibility (a11y)"
+        ],
+        "frameworks_libraries": [
+          "Bootstrap",
+          "jQuery",
+          "Basic Understanding of CSS Preprocessors (SASS/LESS)"
+        ],
+        "tools": [
+          "Basic Command Line Usage",
+          "Text Editor (VSCode or Sublime)"
+        ],
+        "soft_skills": [
+          "Problem Solving",
+          "Collaboration",
+          "Basic Debugging"
+        ]
+      },
+      "Intermediate Frontend Developer": {
+        "core_skills": [
+          "Advanced JavaScript (ES6+)",
+          "TypeScript",
+          "Component-Based Architecture",
+          "State Management (Redux, NgRx)",
+          "Unit Testing (Jest, Jasmine)",
+          "Performance Optimization"
+        ],
+        "frameworks_libraries": [
+          "React",
+          "Angular",
+          "Vue.js",
+          "CSS Frameworks (Material UI, Tailwind)"
+        ],
+        "tools": [
+          "Package Managers (npm, Yarn)",
+          "Build Tools (Webpack, Gulp)",
+          "Linters/Formatters (ESLint, Prettier)",
+          "Version Control Best Practices (Git Flow)"
+        ],
+        "soft_skills": [
+          "Team Collaboration",
+          "Intermediate Debugging",
+          "Time Management",
+          "Code Reviews"
+        ]
+      },
+      "Senior Frontend Developer": {
+        "core_skills": [
+          "Advanced TypeScript",
+          "Server-Side Rendering (Next.js, Nuxt.js)",
+          "Progressive Web Apps (PWAs)",
+          "Web Performance Auditing",
+          "Security Best Practices (OWASP)"
+        ],
+        "frameworks_libraries": [
+          "React Hooks",
+          "Advanced Angular (RxJS, Angular CLI)",
+          "GraphQL",
+          "Micro Frontends Architecture"
+        ],
+        "tools": [
+          "Continuous Integration/Continuous Deployment (CI/CD)",
+          "Docker",
+          "Monitoring Tools (Sentry, LogRocket)",
+          "Cloud Services (AWS, Azure)"
+        ],
+        "soft_skills": [
+          "Mentorship",
+          "Project Leadership",
+          "Architecture Decision Making",
+          "Stakeholder Communication"
+        ]
+      }
+    }
+  }

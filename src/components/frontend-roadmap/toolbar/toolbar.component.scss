@@ -1,0 +1,32 @@
+.toolbar {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    a {
+        text-decoration: none;
+    }
+}
+
+.app-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.nav-link {
+    color: white;
+    margin-left: 16px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffeb3b;
+}
+
+.action-icon {
+    margin-right: 4px;
+}

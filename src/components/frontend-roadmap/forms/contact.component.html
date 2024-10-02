@@ -1,0 +1,53 @@
+<div class="form-container">
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" aria-labelledby="registration-form-title">
+
+        <h2 id="registration-form-title" class="sr-only">Registration Form</h2>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label for="name">Name</mat-label>
+            <input matInput id="name" type="text" formControlName="name" aria-describedby="name-errors" />
+            <mat-error id="name-errors" *ngIf="isInvalid('name')">
+                <small *ngIf="registrationForm.get('name')?.errors?.['required']">Name is required.</small>
+                <small *ngIf="registrationForm.get('name')?.errors?.['minlength']">Name must be at least 3 characters
+                    long.</small>
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label for="email">Email</mat-label>
+            <input matInput id="email" type="email" formControlName="email" aria-describedby="email-errors" />
+            <mat-error id="email-errors" *ngIf="isInvalid('email')">
+                <small *ngIf="registrationForm.get('email')?.errors?.['required']">Email is required.</small>
+                <small *ngIf="registrationForm.get('email')?.errors?.['email']">Invalid email format.</small>
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label for="password">Password</mat-label>
+            <input matInput id="password" type="password" formControlName="password"
+                aria-describedby="password-errors" />
+            <mat-error id="password-errors" *ngIf="isInvalid('password')">
+                <small *ngIf="registrationForm.get('password')?.errors?.['required']">Password is required.</small>
+                <small *ngIf="registrationForm.get('password')?.errors?.['minlength']">Password must be at least 6
+                    characters long.</small>
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label for="confirmPassword">Confirm Password</mat-label>
+            <input matInput id="confirmPassword" type="password" formControlName="confirmPassword"
+                aria-describedby="confirmPassword-errors" />
+            <mat-error id="confirmPassword-errors"
+                *ngIf="isInvalid('confirmPassword') || registrationForm.hasError('notMatching')">
+                <small *ngIf="registrationForm.get('confirmPassword')?.errors?.['required']">Confirm Password is
+                    required.</small>
+                <small *ngIf="registrationForm.hasError('notMatching')">Passwords do not match.</small>
+            </mat-error>
+        </mat-form-field>
+
+        <div class="form-actions">
+            <app-reusable-button label="Save" color="primary"></app-reusable-button>
+            <app-reusable-button label="Cancel" color="warn"></app-reusable-button>
+        </div>
+    </form>
+</div>
